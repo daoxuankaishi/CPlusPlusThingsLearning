@@ -59,34 +59,6 @@
 
 ### 关于作者
 
-公众号已开放两大入口，分别是专辑与菜单，可以直接在微信公众号上阅读《C++ 那些事》内容，配上该仓库的代码，将会非常的爽，建议大家关注一波。
-
-个人公众号：guangcity
-
-或者扫下面的二维码，欢迎大家反馈及 C++ 交流，本人在微信创建了 C++ 那些事交流群，优质的 C++ 资源交流区，期待大家关注上面公众号，点击公众号右下角->联系我，拉你入群。
-
----
-
->关注我
-
-如果觉得不错，关注我吧~
-
-<table>
-  <tbody>
-    <tr>
-      <th align="center" style="height=200 width="200">
-          <img src="./img/cpp.jpg" height="200" width="200" ><br>
-          星球
-      </th>
-      <th align="center" style="height=200 width="200">
-          <img src="./img/wechat.jpg" height="200" width="200" ><br>
-          微信公众号
-      </th>
-    </tr>
-  </tbody>
-</table>
-
-
 ### 项目运行
 
 
