@@ -1,3 +1,7 @@
+这一节主要理解const和指针就行
+
+
+
 ## 1.const含义
 
 常类型是指使用类型修饰符**const**说明的类型，常类型的变量或对象的值是不能被更新的。
@@ -18,11 +22,11 @@ const int a=100;
     + const常量支持所有类型。
     + 其他情况下它只是一个 `const` 限定的变量，不要将与常量混淆。
 
-+ 防止修改，起保护作用，增加程序健壮性
++ **防止修改**，起保护作用，增加程序健壮性
 
 ```cpp
 void f(const int i){
-    i++; // error!
+    i++; // error! 常亮无法修改
 }
 ```
 
@@ -43,7 +47,7 @@ int ext;
 // file2.cpp
 #include<iostream>
 
-extern int ext;
+extern int ext;	//extern关键字引入file1文件中的ext变量
 int main(){
     std::cout<<(ext+10)<<std::endl;
 }
@@ -56,7 +60,7 @@ int main(){
 extern const int ext=12;
 // extern_file2.cpp
 #include<iostream>
-extern const int ext;
+extern const int ext; //extern关键字引入file1文件中的ext变量 注意const对应const存储
 int main(){
     std::cout<<ext<<std::endl;
 }
@@ -77,7 +81,7 @@ const int i,j=0 // error: uninitialized const ‘i’
 + b 为常量，不可更改！
 + i 为常量，必须进行初始化！(因为常量在定义后就不能被修改，所以定义时必须初始化。)
 
-## 5.指针与const
+## 5.指针与const(理解指针的运行原理)
 
 与指针相关的const有四种：
 
@@ -118,7 +122,7 @@ ptr是一个指向int类型const对象的指针，const定义的是int类型，�
 
 ```c++
 const int p = 10;
-const void * vp = &p;
+const void * vp = &p; //指向p的地址 类型为const void const对应存储const类型
 void *vp = &p; // error
 ```
 
