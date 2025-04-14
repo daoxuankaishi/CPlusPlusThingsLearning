@@ -28,7 +28,7 @@ using namespace std;
 void demo() 
 { 
 	// static variable 
-	static int count = 0; 
+	static int count = 0; //静态成员变量的生命周期会延续到整个程序结束，所以他不会被重复初始化定义
 	cout << count << " "; 
 	
 	// value is updated and 
